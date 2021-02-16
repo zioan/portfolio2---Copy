@@ -43,16 +43,6 @@ function Contact() {
     });
   };
 
-  // const handleAlerts = () => {
-  //   if (error && message) {
-  //     return <div className="alert alert-danger mt-4">{message}</div>;
-  //   } else if (!error && message) {
-  //     return <div className="alert alert-success mt-4">{message}</div>;
-  //   } else {
-  //     return null;
-  //   }
-  // };
-
   useEffect(() => {
     axios.get("/api/contactinfo").then((response) => {
       setPhoneNumbers(response.data.phoneNumbers);
@@ -70,67 +60,6 @@ function Contact() {
             <div className="col-lg-6">
               <div className="mi-contact-formwrapper">
                 <h4>Get In Touch</h4>
-                {/* <form
-                  name="contact"
-                  method="post"
-                  action="/contact"
-                  className="mi-form mi-contact-form"
-                  onSubmit={submitHandler}
-                >
-                  <input type="hidden" name="form-name" value="contact" />
-                  <div className="mi-form-field">
-                    <label htmlFor="contact-form-name">Enter your name*</label>
-                    <input
-                      onChange={handleChange}
-                      type="text"
-                      name="name"
-                      id="contact-form-name"
-                      value={formdata.name}
-                    />
-                  </div>
-                  <div className="mi-form-field">
-                    <label htmlFor="contact-form-email">
-                      Enter your email*
-                    </label>
-                    <input
-                      onChange={handleChange}
-                      type="email"
-                      name="email"
-                      id="contact-form-email"
-                      value={formdata.email}
-                    />
-                  </div>
-                  <div className="mi-form-field">
-                    <label htmlFor="contact-form-subject">
-                      Enter your subject*
-                    </label>
-                    <input
-                      onChange={handleChange}
-                      type="text"
-                      name="subject"
-                      id="contact-form-subject"
-                      value={formdata.subject}
-                    />
-                  </div>
-                  <div className="mi-form-field">
-                    <label htmlFor="contact-form-message">
-                      Enter your Message*
-                    </label>
-                    <textarea
-                      onChange={handleChange}
-                      name="message"
-                      id="contact-form-message"
-                      cols="30"
-                      rows="6"
-                      value={formdata.message}
-                    ></textarea>
-                  </div>
-                  <div className="mi-form-field">
-                    <button className="mi-button" type="submit">
-                      Send Mail
-                    </button>
-                  </div>
-                </form> */}
                 <form
                   name="contact"
                   method="post"
@@ -141,10 +70,10 @@ function Contact() {
                   <div className="mi-form-field">
                     <label htmlFor="contact-form-name">Enter your name*</label>
                     <input
+                      required
                       type="text"
                       name="name"
                       id="contact-form-name"
-                      // value={formdata.name}
                     />
                   </div>
                   <div className="mi-form-field">
@@ -152,10 +81,10 @@ function Contact() {
                       Enter your email*
                     </label>
                     <input
+                      required
                       type="email"
                       name="email"
                       id="contact-form-email"
-                      // value={formdata.email}
                     />
                   </div>
                   <div className="mi-form-field">
@@ -163,10 +92,10 @@ function Contact() {
                       Enter your subject*
                     </label>
                     <input
+                      required
                       type="text"
                       name="subject"
                       id="contact-form-subject"
-                      // value={formdata.subject}
                     />
                   </div>
                   <div className="mi-form-field">
@@ -174,11 +103,11 @@ function Contact() {
                       Enter your Message*
                     </label>
                     <textarea
+                      required
                       name="message"
                       id="contact-form-message"
                       cols="30"
                       rows="6"
-                      // value={formdata.message}
                     ></textarea>
                   </div>
                   <div className="mi-form-field">
@@ -187,28 +116,6 @@ function Contact() {
                     </button>
                   </div>
                 </form>
-                {/* <form name="contact" method="post">
-                  <input type="hidden" name="form-name" value="contact" />
-                  <p>
-                    <label>
-                      Your Name: <input type="text" name="name" />
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      Your Email: <input type="email" name="email" />
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      Message: <textarea name="message"></textarea>
-                    </label>
-                  </p>
-                  <p>
-                    <button type="submit">Send</button>
-                  </p>
-                </form> */}
-                {/* {handleAlerts()} */}
               </div>
             </div>
             <div className="col-lg-6">
