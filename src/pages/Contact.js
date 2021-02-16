@@ -43,15 +43,15 @@ function Contact() {
     });
   };
 
-  const handleAlerts = () => {
-    if (error && message) {
-      return <div className="alert alert-danger mt-4">{message}</div>;
-    } else if (!error && message) {
-      return <div className="alert alert-success mt-4">{message}</div>;
-    } else {
-      return null;
-    }
-  };
+  // const handleAlerts = () => {
+  //   if (error && message) {
+  //     return <div className="alert alert-danger mt-4">{message}</div>;
+  //   } else if (!error && message) {
+  //     return <div className="alert alert-success mt-4">{message}</div>;
+  //   } else {
+  //     return null;
+  //   }
+  // };
 
   useEffect(() => {
     axios.get("/api/contactinfo").then((response) => {
@@ -131,7 +131,63 @@ function Contact() {
                     </button>
                   </div>
                 </form> */}
-                <form name="contact" method="post">
+                <form
+                  name="contact"
+                  method="post"
+                  action="/contact"
+                  className="mi-form mi-contact-form"
+                >
+                  <input type="hidden" name="form-name" value="contact" />
+                  <div className="mi-form-field">
+                    <label htmlFor="contact-form-name">Enter your name*</label>
+                    <input
+                      type="text"
+                      name="name"
+                      id="contact-form-name"
+                      // value={formdata.name}
+                    />
+                  </div>
+                  <div className="mi-form-field">
+                    <label htmlFor="contact-form-email">
+                      Enter your email*
+                    </label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="contact-form-email"
+                      // value={formdata.email}
+                    />
+                  </div>
+                  <div className="mi-form-field">
+                    <label htmlFor="contact-form-subject">
+                      Enter your subject*
+                    </label>
+                    <input
+                      type="text"
+                      name="subject"
+                      id="contact-form-subject"
+                      // value={formdata.subject}
+                    />
+                  </div>
+                  <div className="mi-form-field">
+                    <label htmlFor="contact-form-message">
+                      Enter your Message*
+                    </label>
+                    <textarea
+                      name="message"
+                      id="contact-form-message"
+                      cols="30"
+                      rows="6"
+                      // value={formdata.message}
+                    ></textarea>
+                  </div>
+                  <div className="mi-form-field">
+                    <button className="mi-button" type="submit">
+                      Send Mail
+                    </button>
+                  </div>
+                </form>
+                {/* <form name="contact" method="post">
                   <input type="hidden" name="form-name" value="contact" />
                   <p>
                     <label>
@@ -151,8 +207,8 @@ function Contact() {
                   <p>
                     <button type="submit">Send</button>
                   </p>
-                </form>
-                {handleAlerts()}
+                </form> */}
+                {/* {handleAlerts()} */}
               </div>
             </div>
             <div className="col-lg-6">
