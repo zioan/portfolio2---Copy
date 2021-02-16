@@ -72,6 +72,7 @@ function Contact() {
                 <h4>Get In Touch</h4>
                 <form
                   name="contact"
+                  method="post"
                   action="#"
                   className="mi-form mi-contact-form"
                   onSubmit={submitHandler}
