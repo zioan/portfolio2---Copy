@@ -71,10 +71,12 @@ function Contact() {
               <div className="mi-contact-formwrapper">
                 <h4>Get In Touch</h4>
                 <form
+                  name="contact"
                   action="#"
                   className="mi-form mi-contact-form"
                   onSubmit={submitHandler}
                 >
+                  <input type="hidden" name="form-name" value="contact" />
                   <div className="mi-form-field">
                     <label htmlFor="contact-form-name">Enter your name*</label>
                     <input
