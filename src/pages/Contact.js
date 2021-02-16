@@ -70,7 +70,7 @@ function Contact() {
             <div className="col-lg-6">
               <div className="mi-contact-formwrapper">
                 <h4>Get In Touch</h4>
-                <form
+                {/* <form
                   name="contact"
                   method="post"
                   action="/contact"
@@ -130,6 +130,27 @@ function Contact() {
                       Send Mail
                     </button>
                   </div>
+                </form> */}
+                <form name="contact" method="post">
+                  <input type="hidden" name="form-name" value="contact" />
+                  <p>
+                    <label>
+                      Your Name: <input type="text" name="name" />
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      Your Email: <input type="email" name="email" />
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      Message: <textarea name="message"></textarea>
+                    </label>
+                  </p>
+                  <p>
+                    <button type="submit">Send</button>
+                  </p>
                 </form>
                 {handleAlerts()}
               </div>
