@@ -18,14 +18,6 @@ function App() {
   const [lightMode, setLightMode] = useState(false); // Made it true to load light mode primary
   const [language, setLanguage] = useState(false); // Made it false to load English primary
 
-  // const languageSwitch = () {
-  //   if (!language) {
-  //     setLanguage(true);
-  //   } else {
-  //     setLanguage(false);
-  //   }
-  // };
-
   lightMode
     ? document.body.classList.add("light")
     : document.body.classList.remove("light");
@@ -71,11 +63,11 @@ function App() {
       <Switch>
         {language ? (
           <Route path="/" exact>
-            <Home lightMode={lightMode} />
+            <Home lightMode={lightMode} languageMenu="Start" />
           </Route>
         ) : (
           <Route path="/" exact>
-            <HomeDe lightMode={lightMode} />
+            <HomeDe lightMode={lightMode} setLanguageMenu="Home" />
           </Route>
         )}
 

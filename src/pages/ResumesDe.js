@@ -56,7 +56,7 @@ function Resumes() {
             ))}
           </div>
           <div className="mt-30"></div>
-          <Smalltitle title="Bildungsabschlüsse" icon="book" />
+          <Smalltitle title="Schulabschluss/Ausbildung" icon="book" />
           <div className="mi-resume-wrapper">
             {educationExperienceDe.map((educatonExp) => (
               <Resume key={educatonExp.id} resumeData={educatonExp} />

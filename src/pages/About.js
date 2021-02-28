@@ -36,12 +36,13 @@ function About() {
                   I am <span className="color-theme">{information.name}</span>
                 </h3>
                 <p>
-                  I am a self-taught front-end web developer willing to make a
-                  career switch. With a long background in IT, professional and
-                  hobby, and with a strong learning wish, I've decided to get
-                  into the field. My goal is to work in a dynamic and
-                  professional environment that allows me to use and develop the
-                  knowledge acquired.
+                  I am a front-end web developer.<br></br> I have successfully
+                  completed an IT apprenticeship and have many years of
+                  professional experience in IT.<br></br> I would like to change
+                  my current job and go back to IT to turn my hobby into a job.
+                  <br></br>
+                  My goal is to work in a dynamic and professional environment
+                  in which I can use and develop the knowledge I have acquired.
                 </p>
                 <ul>
                   {!information.name ? null : (
@@ -49,9 +50,9 @@ function About() {
                       <b>Full Name</b> {information.name}
                     </li>
                   )}
-                  {!information.age ? null : (
+                  {!information.address ? null : (
                     <li>
-                      <b>Age</b> {information.age} Years
+                      <b>Address</b> {information.address}
                     </li>
                   )}
                   {!information.phone ? null : (
@@ -59,24 +60,24 @@ function About() {
                       <b>Phone</b> {information.phone}
                     </li>
                   )}
-                  {!information.nationality ? null : (
-                    <li>
-                      <b>Nationality</b> {information.nationality}
-                    </li>
-                  )}
-                  {!information.language ? null : (
-                    <li>
-                      <b>Languages</b> {information.language}
-                    </li>
-                  )}
                   {!information.email ? null : (
                     <li>
                       <b>Email</b> {information.email}
                     </li>
                   )}
-                  {!information.address ? null : (
+                  {!information.nationality ? null : (
                     <li>
-                      <b>Address</b> {information.address}
+                      <b>Nationality</b> {information.nationality}
+                    </li>
+                  )}
+                  {!information.birth ? null : (
+                    <li>
+                      <b>Date of birth</b> {information.birth}
+                    </li>
+                  )}
+                  {!information.language ? null : (
+                    <li>
+                      <b>Languages</b> {information.language}
                     </li>
                   )}
                 </ul>

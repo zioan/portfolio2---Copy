@@ -89,8 +89,12 @@ function Home({ lightMode }) {
           <div className="row justify-content-center">
             <div className="col-lg-10 col-12">
               <div className="mi-home-content">
+                <br />
+                <br />
+                <h1>Herzlich Willkommen</h1>
+                <br />
                 <h1>
-                  Hallo, ich bin{" "}
+                  Mein Name ist{" "}
                   <span className="color-theme">{information.name}</span>
                 </h1>
                 <p>{information.aboutContentDe}</p>

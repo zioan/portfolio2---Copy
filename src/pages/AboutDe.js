@@ -37,30 +37,38 @@ function About() {
                   <span className="color-theme">{information.name}</span>
                 </h3>
                 <p>
-                  Ich bin ein autodidaktischer Front-End-Webentwickler, der
-                  bereit ist, seine Karriere zu wechseln. Mit einem langen
-                  Hintergrund in IT, Beruf und Hobby und einem starken
-                  Lernwunsch habe ich mich entschlossen, in das Feld
-                  einzusteigen. Mein Ziel ist es, in einem dynamischen und
-                  professionellen Umfeld zu arbeiten, in dem ich das erworbene
-                  Wissen nutzen und weiterentwickeln kann.
+                  Ich bin ein Front-End-Webentwickler.
+                  <br></br>
+                  Ich habe eine IT- Berufsausbildung erfolgreich absolviert und
+                  konnte langjährige Berufserfahrung in der IT sammeln.
+                  <br></br>
+                  Ich würde gerne meinen derzeitigen Beruf wechseln und zurück
+                  in die IT gehen um mein Hobby zum Beruf zu machen.
+                  <br></br>
+                  Mein Ziel ist es, in einem dynamischen und professionellen
+                  Umfeld zu arbeiten, indem ich das erworbene Wissen nutzen und
+                  weiterentwickeln kann.
                 </p>
                 <ul>
                   {!information.name ? null : (
                     <li>
-                      <b className="listfix">Vollständiger Name</b>{" "}
-                      {information.name}
+                      <b className="listfix">Name</b> {information.name}
                     </li>
                   )}
-                  {!information.age ? null : (
+                  {!information.address ? null : (
                     <li>
-                      <b className="listfix">Alter</b> {information.age} Jahre
-                      alt
+                      <b className="listfix">Adresse</b> {information.addressDe}
                     </li>
                   )}
                   {!information.phone ? null : (
                     <li>
-                      <b className="listfix">Handynummer</b> {information.phone}
+                      <b className="listfix">Handynummer</b>{" "}
+                      {information.phoneDe}
+                    </li>
+                  )}
+                  {!information.email ? null : (
+                    <li>
+                      <b className="listfix">Email</b> {information.email}
                     </li>
                   )}
                   {!information.nationalityDe ? null : (
@@ -69,20 +77,17 @@ function About() {
                       {information.nationalityDe}
                     </li>
                   )}
+                  {!information.birthDe ? null : (
+                    <li>
+                      <b className="listfix">Geburtsdaten</b>{" "}
+                      {information.birthDe}
+                    </li>
+                  )}
+
                   {!information.language ? null : (
                     <li>
                       <b className="listfix">Sprachen</b>{" "}
                       {information.languageDe}
-                    </li>
-                  )}
-                  {!information.email ? null : (
-                    <li>
-                      <b className="listfix">Email</b> {information.email}
-                    </li>
-                  )}
-                  {!information.address ? null : (
-                    <li>
-                      <b className="listfix">Adresse</b> {information.addressDe}
                     </li>
                   )}
                 </ul>

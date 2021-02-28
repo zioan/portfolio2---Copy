@@ -1,10 +1,10 @@
 import React from "react";
 import Header from "../components/Header";
 
-function Layout(props) {
+function Layout(props, { languageMenu }) {
   return (
     <div className="mi-wrapper">
-      <Header />
+      <Header languageMenu={languageMenu} />
       {props.children}
     </div>
   );

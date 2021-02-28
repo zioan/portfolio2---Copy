@@ -4,18 +4,22 @@ const database = {
   information: {
     // English
     name: "Ioan Zaharia",
-    aboutContent: "I code dreams into reality. I am a frontend web developer.",
-    age: 34,
-    phone: "(+49) 015171641545",
+    aboutContent:
+      "I am a web developer. My tasks include further development and implementation of websites. My work as a web developer is mainly programming. My tools of trade are the safe handling of programming or script languages such as JavaScript, and front-end technologies such as HTML5.",
+    birth: "25.05.1986, Romania",
+    phone: "(+49) 15171641545",
     nationality: "Romanian",
     language: "German, English, Italian, Romanian",
     email: "zaharia.ioan@gmail.com",
     address: "26655 Westerstede, Germany",
 
     // De
-    aboutContentDe: "Ich bin ein Frontend-Webentwickler.",
-    nationalityDe: "Rumänische",
-    languageDe: "Deutsche, English, Italienisch, Rumänisch",
+    aboutContentDe:
+      "Ich bin ein Webentwickler. Zu meinen Aufgaben gehört die Entwicklung, Weiterentwicklung und Implementierung von Websites. Meine Tätigkeit als Webentwickler ist schwerpunktmäßig die Programmierung. Mein Handwerkszeug ist der sichere Umgang mit Programmier- oder Skriptsprachen wie beispielsweise JavaScript und es kommen häufig Frontend-Technologien wie zum Beispiel HTML5 zum Einsatz.",
+    nationalityDe: "rumänisch",
+    birthDe: "25.05.1986, Rumänien",
+    phoneDe: "015171641545",
+    languageDe: "Deutsch, Englisch, Italienisch, Rumänisch",
     addressDe: "26655 Westerstede, Deutschland",
     //
 
@@ -132,32 +136,32 @@ const database = {
         id: 1,
         year: "10/2019 - Present",
         position: "Order picker",
-        company: "Getranke Essmann KG (Germany, Westerstede)",
+        company: "Getranke Essmann KG (Westerstede, Germany)",
         details: "",
       },
       {
         id: 2,
         year: "01/2018 - 10/2019",
-        position: "Team Leader",
+        position: "Team Leader (responsibility for more than 20 people)",
         company: "ADIENT SRL (Romania) - Car seats factory, branch VW",
         details:
-          "Proper operation of the assembly line (many automated components), Quality control, Responsible for the team (20 persons).",
+          "Proper operation of the assembly line (many automated components), quality control.",
       },
       {
         id: 3,
         year: "06/2009 - 02/2013",
-        position: "Customers Service (most of the time)",
+        position: "Customers Service",
         company: "IKAT SRL (Romania) - Trucks sale and spare part",
         details:
-          "Maintaining relationships with existing customers and attract new customers and suppliers, Evidence of inventories of goods, Keeping financial records up to date, Creating, maintaining and updating the company's website www.ikat.ro (WordPress), Management and maintenance of the IT system.",
+          "Maintaining relationships with existing customers and attract new customers and suppliers, verification of stock levels, updating of financial documents, creation, maintenance and updating of the company's website www.ikat.ro (WordPress), administration and maintenance of the IT system.",
       },
       {
         id: 4,
         year: "03/2008 - 06/2009",
         position: "Plotter Operator",
-        company: "Spectrum Media SRL (Romania) - Typography and Advertising",
+        company: "Spectrum Media SRL (Romania) - Typography and advertising",
         details:
-          "2D Design (Corel Draw) in accordance with customer requirements, Digital prints at the highest possible standards in various materials, Collaboration and development of new creative projects, Management and maintenance of the IT system.",
+          "2D design (Corel Draw) according to customer requirements, digital printing at the highest level (different materials), cooperation and development of new creative projects, management and maintenance of the IT system.",
       },
     ],
 
@@ -165,34 +169,34 @@ const database = {
     workingExperienceDe: [
       {
         id: 1,
-        year: "10/2019 - Vorhanden",
+        year: "10.2019 - 2021",
         position: "Kommissionierer",
-        company: "Getranke Essmann KG (Deutschland, Westerstede)",
+        company: "Getranke Essmann KG (Westerstede, Deutschland)",
         details: "",
       },
       {
         id: 2,
-        year: "01/2018 - 10/2019",
-        position: "Team Leader",
-        company: "ADIENT SRL (Romania) - Car seats factory, branch VW",
+        year: "01.2018 - 10.2019",
+        position: "Gruppenleiter (Verantwortung über 20 Personen)",
+        company: "ADIENT SRL (Rumänien) - Autositzfabrik, Niederlassung VW",
         details:
-          "Proper operation of the assembly line (many automated components), Quality control, Responsible for the team (20 persons).",
+          "Ordnungsgemäßer Betrieb der Montagelinie (viele automatisierte Komponenten), Qualitätskontrolle.",
       },
       {
         id: 3,
-        year: "06/2009 - 02/2013",
-        position: "Customers Service (most of the time)",
-        company: "IKAT SRL (Romania) - Trucks sale and spare part",
+        year: "06.2009 - 02.2013",
+        position: "Kundenservice",
+        company: "IKAT SRL (Rumänien) - LKW-Verkauf und Ersatzteil",
         details:
-          "Maintaining relationships with existing customers and attract new customers and suppliers, Evidence of inventories of goods, Keeping financial records up to date, Creating, maintaining and updating the company's website www.ikat.ro (WordPress), Management and maintenance of the IT system.",
+          "Pflege zu bestehenden Kunden und Gewinnung neuer Kunden und Lieferanten, Nachweis von Warenbeständen, Aktualisierung der Finanzunterlagen, Erstellung, Pflege und Aktualisierung der Website des Unternehmens www.ikat.ro (WordPress), Verwaltung und Wartung des IT-Systems.",
       },
       {
         id: 4,
-        year: "03/2008 - 06/2009",
+        year: "03.2008 - 06.2009",
         position: "Plotter Operator",
-        company: "Spectrum Media SRL (Romania) - Typography and Advertising",
+        company: "Spectrum Media SRL (Rumänien) - Typografie und Werbung",
         details:
-          "2D Design (Corel Draw) in accordance with customer requirements, Digital prints at the highest possible standards in various materials, Collaboration and development of new creative projects, Management and maintenance of the IT system.",
+          "2D-Design (Corel Draw) nach Kundenwunsch, Digitaldruck auf höchstem Niveau (verschiedene Materialien), Zusammenarbeit und Entwicklung neuer kreativer Projekte, Management und Wartung des IT-Systems.",
       },
     ],
     //
@@ -201,15 +205,15 @@ const database = {
       {
         id: 1,
         year: "2007 - 2008",
-        graduation: "Computer Operator and Basic IT Science",
-        university: "Scoala de Arte si Meserii (Romania)",
+        graduation: "Computer Operator and Basic IT Science (Romania)",
+        university: "",
         details: "",
       },
       {
         id: 2,
         year: "2004 - 2007",
-        graduation: "Higher Schoold Graduation",
-        university: "Grup Scolar (Romania)",
+        graduation: "Higher Schoold Graduation (Romania)",
+        university: "",
         details: "",
       },
     ],
@@ -219,15 +223,16 @@ const database = {
       {
         id: 1,
         year: "2007 - 2008",
-        graduation: "Computer Operator and Basic IT Science",
-        university: "Scoala de Arte si Meserii (Romania)",
+        graduation:
+          "Computer Operator und grundlegende IT-Wissenschaft (Rumänien)",
+        university: "",
         details: "",
       },
       {
         id: 2,
         year: "2004 - 2007",
-        graduation: "Higher Schoold Graduation",
-        university: "Grup Scolar (Romania)",
+        graduation: "Höherer Schulabschluss (Rumänien)",
+        university: "",
         details: "",
       },
     ],

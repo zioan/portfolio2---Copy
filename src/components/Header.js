@@ -5,7 +5,7 @@ import { Link, NavLink } from "react-router-dom";
 
 import * as Icon from "react-feather";
 
-function Header() {
+function Header({ languageMenu }) {
   const [information, setInformation] = useState("");
   const [navigationToggler, setNavigationToggler] = useState(false);
 
